@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Consumer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="collapsing_toolbar_fragment_title">Accueil</string>
+    <string name="fab_fragment_title">Rechercher</string>
+    <string name="about_fragment_title">Adresse de serveur</string>
+
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+
+    <string name="title_activity_result">Resultat</string>
+</resources>
