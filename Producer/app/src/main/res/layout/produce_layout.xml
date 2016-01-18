@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.sagar.materialdesigndemo.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_pname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/pName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom du produit"></EditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_pCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/pCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Catégorie" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_pPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/pPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prix" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_pDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/pDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description" />
+        </android.support.design.widget.TextInputLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_Address"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/pAddress"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="Latitude"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_pCity"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/pCity"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Longitude" />
+        </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/buttonMap"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@android:drawable/ic_menu_mapmode"
+        android:onClick="loadMap"
+  /></LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_imaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom de l'image" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonLoadPicture"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-50dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@android:drawable/ic_menu_gallery"
+            android:onClick="loadImage"></Button>
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="350dp"
+            android:layout_height="100dp"></ImageView>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_vid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/vid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom de la video" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonLoadVid"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-50dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@android:drawable/ic_menu_gallery"
+            android:onClick="loadVideo"></Button>
+
+        <VideoView
+            android:id="@+id/vidView"
+            android:layout_width="350dp"
+            android:layout_height="100dp"></VideoView>
+
+        <Button
+            android:id="@+id/pSubmit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@color/accent"
+            android:onClick="submitProduct"
+            android:text="Envoyer l&apos;offre"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+</LinearLayout>

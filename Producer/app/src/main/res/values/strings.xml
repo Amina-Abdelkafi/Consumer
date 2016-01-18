@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Producer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="collapsing_toolbar_fragment_title">Collapsing toolbar</string>
+    <string name="fab_fragment_title">FAB</string>
+    <string name="about_fragment_title">About</string>
+
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+
+    <string name="title_activity_scrolling">Accueil</string>
+
+</resources>
